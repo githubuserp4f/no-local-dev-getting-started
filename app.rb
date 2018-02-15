@@ -15,7 +15,7 @@ class Account < ActiveRecord::Base
 end
 
 get "/accounts" do
-  @accounts = Contact.all
+  @accounts = Account.all
   erb :index
 end
 
